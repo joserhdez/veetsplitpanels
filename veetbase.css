@@ -1,0 +1,73 @@
+/* globals: Note CSS variables are not supported by all browsers
+:root {
+	--colormenu: rgba(240,240,240,1);
+	--colorworkspace: rgba(200,200,200,1);
+}
+*/
+
+html { 
+	height: 100%;
+	margin: 0;
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	flex: 0 0 auto;
+	background: rgba(220,220,220,1);
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+header > * {
+	margin: 2px;
+	padding: 2px;
+}
+
+footer {
+	flex: 0 0 auto;
+	background: rgba(220,220,220,1);
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+footer > * {
+	margin: 2px;
+	padding: 2px;
+}
+
+.veetcolorbase {
+	background: white;
+}
+
+.veetcolormenu {
+	background: rgba(220,220,220,1);
+}
+
+.logo {
+	width: 220px;
+}
+
+.application {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 0px;
+	overflow: hidden;
+}
+
+/* fonts */
+.fontdata {font-family: Consolas, "Courier New", Courier, monospace; font-size: 10pt; color: black;}
+.fontserif {font-family: Cambria, "Times New Roman", Times, serif; }
+.fontsansserif {font-family: Calibri, Arial, Helvetica, sans-serif; }
+h1, h2, h3 {
+	color: rgba(147,148,152,1);
+}
+
+/* pictures */
+img {max-width: 100%;max-height: 100%;}

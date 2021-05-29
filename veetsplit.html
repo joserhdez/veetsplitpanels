@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>veet split</title>
+
+	<!-- style sheets local -->
+	<link rel="stylesheet" href="./veetbase.css">
+	<link rel="stylesheet" href="./veetpanels.css">
+	<link rel="stylesheet" href="./veetsplit.css">
+	<script src="./veetsplit.js"></script>
+
+</head>
+
+<!-- gui -->
+<body class="application">
+	<header>Header</header>
+	<nav class="veetcolormenu">Navigation</nav>
+    <div class="panelcontainer horizontal ">
+		<div class="panel dockleft" style="background:rgba(255,0,0,0.2);">normal panel</div>
+		<div id="mapcontainer" class="panelcontainer horizontal ">
+			<div id="tools" class="splitpanel leftpanel ">
+				<div id="toolcontainer" class="panelcontainer vertical ">
+					<div id="layers" class="splitpanel toppanel " style="background:rgba(100,20,0,0.2);">layers</div>
+					<div id="splitterTool" class="splitter row"></div>
+					<div id="info" class="splitpanel bottompanel " style="background:rgba(20,100,0,0.2);">info</div>
+				</div>
+			</div>
+			<div id="splitterMap" class="splitter column"></div>
+			<div id="map" class="splitpanel rightpanel " style="background:rgba(0,20,200,0.2);">map</div>
+		</div>
+		<div class="panel dockright" style="background:rgba(255,0,0,0.2);">2nd normal panel</div>
+	</div>
+	<footer>Footer</footer>
+</body>
+
+<!-- js -->
+<script>
+	//veet.split.setSplit('splitterMap',{splitterSize:'15',startPosition:'25',minSize:'20'});
+	//veet.split.setSplit('splitterTool',{splitterSize:'5',startPosition:'80',minSize:'30'});
+	//veet.split.setSplit('splitterMap',{splitterSize:'10',startPosition:'75',minSizePanel1:'10',minSizePanel2:'5',fixedPanel2:false});
+	//veet.split.setSplit('splitterTool',{splitterSize:'10',startPosition:'80',minSizePanel1:'5',minSizePanel2:'10',fixedPanel2:false});
+	veet.split.setSplit('splitterMap',{splitterSize:'10',startPosition:'75',minSizePanel1:'10',minSizePanel2:'5',fixedPanel2:true});
+	veet.split.setSplit('splitterTool',{splitterSize:'10',startPosition:'80',minSizePanel1:'5',minSizePanel2:'10',isFixed:true,fixedPanel2:true});
+	//veet.split.setSplit('splitterMap',{splitterSize:'10',startPosition:'75',minSizePanel1:'10',minSizePanel2:'5',fixedPanel2:false});
+	//veet.split.setSplit('splitterTool',{splitterSize:'10',startPosition:'80',minSizePanel1:'5',minSizePanel2:'10',fixedPanel2:true});
+	//veet.split.setSplit('splitterMap',{splitterSize:'10',startPosition:'75',minSizePanel1:'10',minSizePanel2:'5',fixedPanel2:true});
+	//veet.split.setSplit('splitterTool',{splitterSize:'10',startPosition:'80',minSizePanel1:'5',minSizePanel2:'10',fixedPanel2:true});
+	
+	veet.split.logOptions('splitterMap');
+</script>
+</html>

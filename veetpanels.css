@@ -1,0 +1,95 @@
+.panelcontainer {
+	background: transparent;
+	margin: 0px;
+	padding: 0px;
+	
+	/*
+		prefixes generated with: http://autoprefixer.github.io
+	*/
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+			
+	/* for the child elements: */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;	
+	overflow: auto;
+}
+
+.panelcontainer.horizontal {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;	
+}
+
+.panelcontainer.vertical {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.panelcontainer.outline {
+	outline: 1px dashed blue;
+}
+
+.panel {
+	background: transparent;
+	padding: 0px;
+	min-width: 5;
+	min-height: 5;
+	
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	
+	/* for the child elements: */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	overflow: auto;
+}
+
+.panel.outline {
+	outline: 1px dashed red;
+}
+
+.panel.dockleft {
+	min-width: 100px;
+}
+
+.panel.docktop {
+	min-height: 100px;
+}
+
+.panel.dockright {
+	min-width: 100px;
+	margin-left: auto;
+}
+
+.panel.dockbottom {
+	min-height: 100px;
+	margin-top: auto;
+}
+
+.panel.dockfill {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+.panel.hide {
+	display: none;
+}
